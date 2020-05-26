@@ -1,0 +1,122 @@
+body {
+    background-color: #3d2ecd;
+    font-family: 'Lato', sans-serif;
+}
+
+body::after {
+    content: "";
+    background: url(https://www.careeraddict.com/uploads/article/55649/team-working-together-office.jpg) no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+header h2 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+header h3 {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+label {
+    display: block;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+#would {
+    padding-bottom: 10px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type='radio'] {
+    transform: scale(1.5);
+}
+
+input[type='checkbox'] {
+    transform: scale(1.5);
+}
+
+span, input {
+    margin: 5px 15px 5px 5px;
+}
+
+#form {
+    background: rgba(102, 151, 200, 0.5);
+    width: 600px;
+    height: 100%;
+    padding: 30px 30px 50px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    border-radius: 5px;
+}
+
+form {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+input:focus, input:hover {
+    outline: none;
+    border: 1px solid
+}
+
+select {
+    cursor: pointer;
+
+    appearance: none;
+
+    -moz-appearance: none;
+
+}
+
+select:focus, select:hover {
+    outline: none;
+    border: 1px solid;
+
+}
+
+select option {
+    background: #ffffff;
+}
+
+#recommend {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+select {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#feature {
+    padding-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+}
+

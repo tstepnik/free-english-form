@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div id="container">
+    <header>
+        <h2>FreeEnglish Survey Form</h2>
+        <h3>Thank you for taking the time to help us improve the platform</h3>
+    </header>
+
+    <main>
+        <div id="form">
+            <section>
+                <div id="name">
+                    <form method="post">
+                        <label>Name</label>
+                        <input type="text" placeholder="Enter your name" name="name">
+                    </form>
+                </div>
+            </section>
+
+            <section>
+                <div id="email">
+                    <form method="post">
+                        <label>Email</label>
+                        <input type="text" placeholder="Enter your email" name="email">
+                    </form>
+                </div>
+            </section>
+
+            <section>
+                <div id="age">
+                    <form method="post">
+                        <label>Age</label>
+                        <input type="text" placeholder="How old are you ?" name="age">
+                    </form>
+                </div>
+            </section>
+
+            <section>
+                <div id="role">
+                    <label>Which option best describes your current role?</label>
+                    <select name="role">
+                        <option disabled selected>Select current role</option>
+                        <option>Student</option>
+                        <option>Traveler</option>
+                        <option>Bussines owner</option>
+                        <option>Employee</option>
+                        <option>Teacher</option>
+                    </select>
+
+                </div>
+            </section>
+
+            <section>
+                <div id="recommend">
+                    <label id="would">Would you recommend freeCodeCamp to a friend?</label>
+                    <div><label><input type="radio" name="1">Definitely</label></div>
+                    <div><label><input type="radio" name="1">Maybe</label></div>
+                    <div><label><input type="radio" name="1">Not sure</label></div>
+
+                </div>
+            </section>
+
+            <section>
+                <div id="feature">
+                    <label id="what">What is your favorite feature of FreeEnglish?</label>
+                    <select>
+                        <option selected disabled>Select an option</option>
+                        <option>Challenges</option>
+                        <option>Projects</option>
+                        <option>Community</option>
+                    </select>
+                </div>
+            </section>
+
+            <section>
+                <div id="check-to-imporove">
+
+                    <label>What would you like to see improved?<small> (Check all that apply)</small></label>
+                    <div><label> <input type="checkbox"/>reading</label></div>
+                    <div><label> <input type="checkbox"/>writing</label></div>
+                    <div><label> <input type="checkbox"/>listening</label></div>
+                    <div><label> <input type="checkbox"/>speaking</label></div>
+                </div>
+            </section>
+
+            <section>
+                <div id="suggestions">
+                    <label>Any comments or suggestions?</label>
+                    <textarea rows="7" cols="auto"></textarea>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+</div>
+
+</body>
