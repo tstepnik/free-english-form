@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<div id="bg">
-    <img src="https://www.careeraddict.com/uploads/article/55649/team-working-together-office.jpg" alt="">
-</div>
+
 <div id="container">
     <header>
         <h2>FreeEnglish Survey Form</h2>
@@ -19,25 +17,27 @@
 
     <main>
         <div id="form">
+            <form method="post">
             <section> <div id="name">
-                <form method="post">
                     <label>Name</label>
-                    <input type="text" placeholder="Enter your name" name="name">
-                </form>
+                    <input type="text" placeholder="Enter your name" name="name" required>
+
             </div></section>
 
             <section> <div id="email">
-                <form method="post">
+
                     <label >Email</label>
-                    <input type="text" placeholder="Enter your email" name="email">
-                </form>
+                    <input type="email" placeholder="Enter your email" name="email" required>
+
             </div></section>
 
             <section> <div id="age">
-                <form method="post">
+
                     <label >Age</label>
-                    <input type="text" placeholder="How old are you ?" name="age">
-                </form>
+                    <input type="number" placeholder="How old are you ?" name="age"  min="10"
+                           max="99"
+                           oninput="this.setCustomValidity('Age must be greater than 9')">
+
             </div></section>
 
             <section> <div id="role">
@@ -86,9 +86,13 @@
                 <textarea rows="7" cols="auto"></textarea>
             </div></section>
 
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                </div>
+            </form>
         </div>
     </main>
-
 </div>
-
-</body></body>
+</body></html>

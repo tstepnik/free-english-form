@@ -1,25 +1,26 @@
+html {
+
+}
+
 body{
-    background-color: #191970;
+    background-attachment: fixed;
+    position: relative;
+    background-color: black;
     font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(
+    115deg,
+    rgba(130,120,210,0.8),
+    rgba(0,0,0,0.5)
+    ), url("https://www.careeraddict.com/uploads/article/55649/team-working-together-office.jpg") ;
+    height: 100vh;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+
 }
-#bg {
-    position: fixed;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-}
-#bg img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    min-width: 50%;
-    min-height: 50%;
-    opacity: 0.1
-}
+
 
 
 header h2 {
@@ -47,7 +48,7 @@ label{
     padding-bottom:10px;
 }
 
-input[type=text], select {
+input[type=text],input[type=email],input[type=number], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -99,7 +100,7 @@ select {
 
 select:focus, select:hover {
     outline: none;
-    border: 1px solid;
+    border: 1px solid black;
 
 }
 
@@ -126,4 +127,22 @@ textarea {
 #suggestions
 {
     padding-top:15px;
+}
+
+.form-group {
+    margin: 0 auto 1.25rem auto;
+padding: 10px 10px 10px 0px;
+}
+
+.submit-button{
+    border: none;
+
+    display: block;
+    width: 100%;
+    padding: 0.75em 0.75em 0.75em 0.75em;
+    background-color: green;
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
 }
